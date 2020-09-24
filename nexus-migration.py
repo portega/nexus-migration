@@ -4,7 +4,7 @@ FILE_TYPES = {
     "maven2" : [".jar", ".pom"],
     "npm"    : [".tgz"]
 }
-source_repo = 'http://nexus.innofis.local:8081'
+source_repo = 'http://localhost:8081'
 dest_repo = 'http://localhost:8081'
 
 ##### Save current token to file #####
@@ -145,7 +145,7 @@ def downloadNPM(repo, token, targetRepoName):
         # UPLOAD
         print("Uploading: ", end=' ')
         r = requests.post(uploadUrl,
-            auth=('admin', 'admin123'),
+            auth=('admin', 'admin'),
             files={'npm-asset': open(filePath, 'rb')}
         )
         print(r.status_code)
