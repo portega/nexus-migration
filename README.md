@@ -7,17 +7,15 @@ nexus-migration.py [-h] [-t TOKEN] [-d DESTINATION] repo type
 
 Nexus repository migration through assets API
 
-positional arguments:
+#### positional arguments:
 
   repo                  name of the origin repo
   type                  type of repo (maven2, npm)
 
-optional arguments:
+#### optional arguments:
 
-  -h, --help            					show this help message and exit
+  -h, --help            							   show this help message and exit
 
-  -t TOKEN, --token TOKEN    continuation token from asset list
+  -t, --token TOKEN    						continuation token from asset list
 
-  -d DESTINATION, --destination DESTINATION
-                        destination repo (if it has a different name than
-                        origin)
+  -d, --destination DESTINATION	 destination repo (if it has a different name than origin)
